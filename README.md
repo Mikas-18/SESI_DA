@@ -1,268 +1,324 @@
 # SESI_DA
 Disciplina de desenvolvimento de aplicativo da turma do segundo ano do 5 itinerário de tds.
-# TechFuture Expo - Portal Oficial
 
-## Descrição do Projeto
+# TechFuture Expo - Guia das Tags HTML Utilizadas
 
-Este projeto consiste no desenvolvimento do portal oficial da **TechFuture Expo**, uma feira nacional de tecnologia que reúne empresas, startups, palestrantes, cursos, competições e visitantes de todo o país.
+## Estrutura Básica
 
-O objetivo principal foi criar um site completo utilizando **apenas HTML**, sem a utilização de CSS ou JavaScript, explorando ao máximo os recursos nativos da linguagem de marcação.
+### `<html>`
+Define o início e o fim do documento HTML.
+
+### `<head>`
+Contém informações da página que não são exibidas diretamente ao usuário.
+
+### `<title>`
+Define o título da aba do navegador.
+
+### `<meta>`
+Fornece metadados sobre a página.
+
+### `<body>`
+Contém todo o conteúdo visível da página.
 
 ---
 
-## Estrutura do Projeto
+## Títulos e Textos
 
-```text
-/
-├── index.html
-├── evento.html
-├── inscricao.html
-└── laboratorio.html
+### `<h1>` até `<h6>`
+Criam títulos e subtítulos em diferentes níveis.
+
+### `<p>`
+Cria parágrafos.
+
+### `<br>`
+Realiza uma quebra de linha.
+
+### `<hr>`
+Insere uma linha horizontal.
+
+### `<strong>`
+Destaca um texto importante (negrito).
+
+### `<em>`
+Dá ênfase ao texto (itálico).
+
+### `<mark>`
+Destaca um trecho do texto.
+
+### `<small>`
+Exibe texto menor.
+
+### `<sub>`
+Cria texto subscrito.
+
+Exemplo:
+
+```html
+H<sub>2</sub>O
+```
+
+### `<sup>`
+Cria texto sobrescrito.
+
+Exemplo:
+
+```html
+x<sup>2</sup>
 ```
 
 ---
 
-## Páginas Desenvolvidas
+## Listas
 
-### 1. index.html – Página Inicial
+### `<ol>`
+Lista ordenada (numerada).
 
-Página responsável pela apresentação da feira.
+### `<ul>`
+Lista não ordenada.
 
-#### Conteúdo
-
-- Nome do evento
-- Slogan
-- Data
-- Local
-- Texto de apresentação
-- Menu de navegação
-- Seção "Por que participar?"
-
-#### Tags utilizadas
-
-- html
-- head
-- title
-- meta
-- body
-- h1 até h6
-- p
-- br
-- hr
-- strong
-- em
-- mark
-- small
-- sub
-- sup
-- ol
-- ul
-- li
+### `<li>`
+Item da lista.
 
 ---
 
-### 2. evento.html – Informações Completas do Evento
+## Estrutura Semântica
 
-Página que reúne todas as informações detalhadas da TechFuture Expo.
+### `<header>`
+Cabeçalho da página.
 
-#### Sobre o Evento
+### `<main>`
+Conteúdo principal.
 
-Utilização de:
+### `<section>`
+Agrupa conteúdos relacionados.
 
-- header
-- main
-- section
-- article
+### `<article>`
+Conteúdo independente.
 
-#### Programação
+### `<nav>`
+Área de navegação.
 
-- 10 palestras cadastradas
-- 8 palestrantes
+### `<footer>`
+Rodapé da página.
 
-Utilização de:
-
-- article
-- time
-
-#### Expositores
-
-Tabela contendo:
-
-- Empresa
-- Cidade
-- Segmento
-- Número do estande
-
-Utilização de:
-
-- table
-- caption
-- thead
-- tbody
-- tfoot
-- tr
-- th
-- td
-
-#### Notícias
-
-- 3 notícias relacionadas ao evento
-
-Utilização de:
-
-- address
-- blockquote
-- cite
-
-#### Galeria
-
-- 10 imagens
-
-Utilização de:
-
-- figure
-- figcaption
-- img
-
-Todas as imagens possuem:
-
-- alt
-- title
-
-#### Multimídia
-
-- 2 vídeos
-- 2 áudios
-
-Utilização de:
-
-- video
-- audio
-- source
-
-#### FAQ
-
-- 10 perguntas frequentes
-
-Utilização de:
-
-- details
-- summary
+### `<aside>`
+Conteúdo complementar.
 
 ---
 
-### 3. inscricao.html – Sistema de Inscrição
+## Datas e Horários
 
-Página destinada ao cadastro de participantes do evento.
+### `<time>`
+Representa datas e horários.
 
-#### Estrutura
+Exemplo:
 
-Utilização de:
-
-- form
-- fieldset
-- legend
-- label
-- input
-- textarea
-- select
-- option
-- button
-
-#### Dados Pessoais
-
-- Nome
-- Sobrenome
-- CPF
-- RG
-- Data de nascimento
-- E-mail
-- Telefone
-
-#### Dados Profissionais
-
-- Empresa
-- Cargo
-- Área de atuação
-
-#### Participação
-
-- Dias do evento
-- Trilhas de interesse
-- Alimentação especial
-
-#### Tipos de Input Utilizados
-
-- text
-- email
-- password
-- date
-- number
-- file
-- radio
-- checkbox
-- tel
-- url
-- color
-- range
+```html
+<time datetime="2026-11-15">15 de novembro de 2026</time>
+```
 
 ---
 
-### 4. laboratorio.html – Laboratório HTML
+## Tabelas
 
-Página dedicada à pesquisa e experimentação de elementos HTML.
+### `<table>`
+Cria uma tabela.
 
-#### Objetivo
+### `<caption>`
+Título da tabela.
 
-Apresentar pelo menos 20 tags HTML diferentes contendo:
+### `<thead>`
+Cabeçalho da tabela.
 
-- Nome da tag
-- Função
-- Exemplo
-- Resultado esperado
+### `<tbody>`
+Corpo da tabela.
 
-#### Exemplos de tags pesquisadas
+### `<tfoot>`
+Rodapé da tabela.
 
-- nav
-- aside
-- footer
-- progress
-- meter
-- iframe
-- code
-- pre
-- kbd
-- samp
-- abbr
-- data
-- time
-- del
-- ins
-- map
-- area
-- datalist
-- output
-- dialog
+### `<tr>`
+Linha da tabela.
+
+### `<th>`
+Célula de cabeçalho.
+
+### `<td>`
+Célula comum.
 
 ---
 
-## Tecnologias Utilizadas
+## Citações
 
-- HTML5
+### `<address>`
+Informações de contato.
 
----
+### `<blockquote>`
+Citação em bloco.
 
-## Objetivos de Aprendizagem
-
-- Praticar a estrutura semântica do HTML5.
-- Utilizar formulários completos.
-- Trabalhar com tabelas.
-- Inserir mídias (áudio e vídeo).
-- Organizar conteúdo utilizando elementos semânticos.
-- Explorar recursos avançados do HTML sem CSS e JavaScript.
+### `<cite>`
+Fonte da citação.
 
 ---
 
-## Autor
+## Imagens
 
-Projeto desenvolvido para fins acadêmicos como atividade prática de HTML5.
+### `<img>`
+Insere uma imagem.
+
+### `<figure>`
+Agrupa uma imagem.
+
+### `<figcaption>`
+Legenda da imagem.
+
+### Atributo `alt`
+Texto alternativo da imagem.
+
+### Atributo `title`
+Texto exibido ao passar o mouse.
+
+---
+
+## Multimídia
+
+### `<video>`
+Insere vídeos.
+
+### `<audio>`
+Insere áudios.
+
+### `<source>`
+Define o arquivo utilizado.
+
+---
+
+## FAQ
+
+### `<details>`
+Cria uma área expansível.
+
+### `<summary>`
+Título clicável da área expansível.
+
+---
+
+## Formulários
+
+### `<form>`
+Cria um formulário.
+
+### `<fieldset>`
+Agrupa campos relacionados.
+
+### `<legend>`
+Título do grupo de campos.
+
+### `<label>`
+Identifica um campo.
+
+### `<input>`
+Campo de entrada de dados.
+
+### `<textarea>`
+Campo para textos longos.
+
+### `<select>`
+Lista suspensa.
+
+### `<option>`
+Opção da lista.
+
+### `<button>`
+Botão de envio ou ação.
+
+---
+
+## Tipos de Input
+
+### `text`
+Texto simples.
+
+### `email`
+Endereço de e-mail.
+
+### `password`
+Senha.
+
+### `date`
+Data.
+
+### `number`
+Número.
+
+### `file`
+Upload de arquivo.
+
+### `radio`
+Seleção única.
+
+### `checkbox`
+Seleção múltipla.
+
+### `tel`
+Telefone.
+
+### `url`
+Endereço de site.
+
+### `color`
+Seletor de cores.
+
+### `range`
+Barra deslizante.
+
+---
+
+## Tags para o Laboratório HTML
+
+### `<code>`
+Exibe código.
+
+### `<pre>`
+Mantém a formatação original.
+
+### `<kbd>`
+Representa teclas do teclado.
+
+### `<samp>`
+Mostra saída de programas.
+
+### `<abbr>`
+Abreviações.
+
+### `<progress>`
+Barra de progresso.
+
+### `<meter>`
+Indicador de medida.
+
+### `<iframe>`
+Incorpora outra página.
+
+### `<data>`
+Associa um valor a um conteúdo.
+
+### `<del>`
+Texto removido.
+
+### `<ins>`
+Texto inserido.
+
+### `<map>`
+Mapa de imagem.
+
+### `<area>`
+Área clicável em mapa de imagem.
+
+### `<datalist>`
+Lista de sugestões para inputs.
+
+### `<output>`
+Resultado de cálculos.
+
+### `<dialog>`
+Caixa de diálogo.
